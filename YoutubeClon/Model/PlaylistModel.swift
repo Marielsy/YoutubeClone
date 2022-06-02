@@ -11,9 +11,9 @@ struct PlaylistModel: Decodable{
     let kind : String
     let etag : String
     let pageInfo : PageInfo
-    let items : [Item]
+    let items : [Items]
     
-    struct Item: Decodable{
+    struct Items: Decodable{
         let kind: String
         let etag: String
         let id: String

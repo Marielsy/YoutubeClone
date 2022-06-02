@@ -70,7 +70,7 @@ extension HomeViewController :UITableViewDelegate, UITableViewDataSource{
             return UITableViewCell()
         }
         return videoCell
-     }else if let playlist = item as? [PlaylistModel.Item]{
+     }else if let playlist = item as? [PlaylistModel.Items]{
         guard let PlaylistCell = tableView.dequeueReusableCell(withIdentifier: "\(PlaylistModel.self)", for: indexPath) as? PlaylistCell else{
             return UITableViewCell()
         }
